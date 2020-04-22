@@ -4,7 +4,7 @@
 This repository holds all the codebase for the Front End server and the Back End API used in the development of the
 application found in http://elecciones2019.fi.uba.ar/.
 
-All this code, as well as all the code you can find [here](https://github.com/facuguerrero/eleccionesBackEnd) was
+All this code, as well as all the code you can find [here](https://github.com/RodrigoDeRosa/eleccionesBackEnd) was
 designed, coded and tested by a team integrated by [Rodrigo De Rosa](https://github.com/RodrigoDeRosa),
 [Facundo Guerrero](https://github.com/facuguerrero) and [Marcos Schapira](https://github.com/marcossch) in the context
 of the Software Engineering integral final work at the University of Buenos Aires. In this readme, the basics of this
@@ -81,11 +81,11 @@ Interactive Stacked bar chart.
 
 ### Back End API
 
-To separate our processing application (which can be found [here](https://github.com/facuguerrero/eleccionesBackEnd))
+To separate our processing application (which can be found [here](https://github.com/RodrigoDeRosa/eleccionesBackEnd))
 from the Front End application related requests, we created a simple server that would simply get the created metrics
 from the database and map them to a model the Front End application could easily display.
 
-The code for this API server is [here](https://github.com/facuguerrero/eleccionesFrontEnd/tree/master/Mini-BackEnd) and
+The code for this API server is [here](https://github.com/RodrigoDeRosa/eleccionesFrontEnd/tree/master/Mini-BackEnd) and
 it is a Python Flask application running with [gUnicorn](https://gunicorn.org/) for a dynamic multiple worker
 architecture in case we needed higher availability.
 
@@ -111,9 +111,9 @@ certain window of time.
 * `/topic_usage/<topic_id>` returns data about how many supporters of each party used at least one hashtag of an
 specific conversation topic in a certain window of time.
 * `/similarities` returns a report about similarities between the different party's support groups; a concept you can find
-explained [here](https://github.com/facuguerrero/eleccionesBackEnd).
+explained [here](https://github.com/RodrigoDeRosa/eleccionesBackEnd).
 * `/party_relationships` returns information about how polarized the user network is; a concept you can also find
-explained [here](https://github.com/facuguerrero/eleccionesBackEnd).
+explained [here](https://github.com/RodrigoDeRosa/eleccionesBackEnd).
 * `/<path:path>` would handle all wrong paths and return an exception.
 
 ## Deployment
